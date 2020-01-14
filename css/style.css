@@ -16,7 +16,7 @@ h4 {
     text-transform: capitalize;
     letter-spacing: 2px;
     position: relative;
-    color: #425BB5;
+    color: #425BB5 ;
     margin-left: 40px;
     font-weight: 700;
 }
@@ -223,8 +223,11 @@ nav li a {
 }
 
 .bg-nav {
-    background: #444;
-    border-bottom: 1px solid #f3f3f3
+    background: linear-gradient(
+    to bottom,
+    #000,
+    rgba(255, 0, 0, 0)
+  )
 }
 
 .bg-nav ul {
@@ -250,9 +253,12 @@ a.active {
 ==================================================*/
 
 #home {
-    background: url(../img/background.jpg);
+    background: url(../img/portfolio.jpg);
     background-size: cover;
     height: 100vh;
+}
+#home .overlay{
+    background-color: #00000080;
 }
 
 .table-cell {
@@ -271,6 +277,12 @@ a.active {
 
 #about {
     padding: 100px 0;
+}
+
+#download{
+    margin: 50px 0;
+    font-size: 18pt;
+    font-weight: bold;
 }
 
 .about-img-div img {
@@ -465,6 +477,8 @@ a.active {
     overflow: hidden;
     display: block;
     margin-bottom: 30px;
+
+    
 }
 
 .portfolio_item .portfolio_item_hover {
